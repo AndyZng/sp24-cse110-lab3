@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>"Rizz Party App Meeting 2"</title>
     <link rel="icon" href="sr2e27a697689aws3.png" type="image/x-icon">
+    <link rel ="stylesheet" href = "index.css">
   </head>
   <body>
+    <div class = "Title">
     <header>
-        <h1>App design and team house keeping</h1>
+        <h1>App design and Team House Keeping</h1>
         <b>Welcome back everyone!</b>
     </header>
     <nav>
@@ -17,6 +19,7 @@
     <h2>
         Todays Date: 4/15
     </h2>
+  </div>
     <div class = "House_keeping">
         <h3>
             Attendance:
@@ -30,17 +33,20 @@
             <li>White Shirt Kid</li>
             <li>Ice Spice</li>
         </ul>
-        <section id="agenda"></section>
-        
-        <h3>
+        <div class = "Agenda">
+        <section id="agenda_title">
+          <h3>
             Agenda for today/new things to discuss:
         </h3>
+        </section>
         <ol>
             <li>Establish the Group Leader (Via dance off)</li>
             <li>Determine theme of the app</li>
             <li>Delegate tasks to team members</li>
             <li><Strong>*Important*</Strong> Brainstorm logistics and functionality of the app</li>
           </ol>
+        </div>
+        <div class = "Continuations">
         <h3>
             Continuations from previous meeting:
         </h3>
@@ -48,18 +54,20 @@
             <li>Group introductions</li>
             <li>Team bonding activity (speed dating)</li>
         </ul>
-        <p>Concerns from last meeting:</p>
+        <p id = "Concerns" style="color:#ff0000">Concerns from last meeting:</p>
         <ul>
             <li>Potential overthrow of the group leader - TQD</li>
             <li>Project timeline passes the <em>TikTok ban date</em>- Joe Biden</li>
         </ul>
+      </div>
     </div>
     </main>
     
-    <h2><span>Media</span></h2>
+    <div class = "Media">
+    <h2>Media</h2>
     <details>
         <summary>
-            Pictures of ideas for the app:
+            Pictures of ideas for the app (click to view):
         </summary>
         <p>Basic app idea and diagrams</p>
         <img src="image.png" alt="App diagram"/>
@@ -74,6 +82,7 @@
     <audio controls>
         <source src = "audio.mp3" type = "audio/mpeg">
     </audio>
+  </div>
     <form action="submit.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
@@ -116,7 +125,7 @@
         <button type="submit">Submit</button>
       </form>
     <footer>
-        <p>Meeting page author: Andy Zhang</p>
+        <span id = "footer"><p>Meeting page author: Andy Zhang</p></span>
     </footer>
   </body>
 </html>
